@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Russo+One&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*HEADER*/
+.contenedor-header{
+    background: linear-gradient(to top, rgb(151, 146, 146), rgb(56, 55, 54));
+    position: fixed;
+    width: 100%;
+
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+}
+.contenedor-header header .logo a{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    color: orangered;
+    text-decoration: none;
+    text-align: left;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: orangered;
+    margin: 0 15px;
+    padding:  3px;
+    text-decoration:  none;
+    transition: .5s;
+}
+.contenedor-header header nav ul li a:hover{
+    color: white;
+}
+.barra-responsive{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)),
+    url("/Mi_CV_Alejandro_Diaz/fondo.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-baner{
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    color: #ff4500;
+}
+
+.inicio .contenido-baner img{
+    margin-top: 30px;
+    border: 5px solid whitesmoke;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    display: block;
+}
+.inicio .contenido-baner h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+.inicio .contenido-baner h2{
+    font-size: 10px;
+    font-style: oblique;
+}
+.inicio .contenido-baner .redes a{
+    color: rgb(227, 143, 32);
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #ff4500;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    margin: 20px 10px;
+    transition: 1s;
+}
+.inicio .contenido-baner .redes a:hover{
+    background-color: red;
+}
+/*DE MI*/
+.sobremi{
+    background-color: rgb(18, 17, 17);
+    color: #ffffff;
+    padding: 30px 20px;
+}
+.sobremi .cont-sobremi{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Russo One';
+    font-size: 40px;
+}
+.sobremi .cont-sobremi p{
+    margin-bottom: 20px;
+    font-size: 15x;
+    line-height: 20px;
+
+}
+.sobremi .cont-sobremi p span{
+    font-weight: bold;
+    color:#ff4500;
+}
+.sobremi .cont-sobremi strong{
+    font-weight: bold;
+    color:#ff4500;
+    font-style: italic;
+    display: inline-block;
+    width: 200px;
+}
+.sobremi .fil{
+    display: flex;
+}
+.sobremi .fil .col{
+    width: 50%;
+}
+
+.sobremi .fil .col h3{
+    margin-bottom: 25px ;
+    font-size: 25px;
+    text-align: center;
+}
+.sobremi .fil .col ul{
+    list-style: none;
+}
+.sobremi .fil .col ul li{
+    margin: 10px 0;
+}
+.sobremi .fil .col .contlibre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fil .col .contlibre .interes{
+    background-color:rgb(18, 17, 17);
+    width: 130px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobremi .fil .col .contlibre .interes:hover{
+    background-color: #ff4500;
+}
+
+.sobremi .fil .col .contlibre .interes i{
+    font-size: 25px;
+    margin-bottom:20px ;
+}
+
+/*HABILIDADES*/
+
+.habilidades{
+    background-color: rgb(27, 26, 26);
+    color: #e6830a;
+    padding-left: 20px;
+}
+.habilidades .conthab{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-family: 'Russo One';
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+.habilidades h3{
+    padding: 10px;
+    font-family: 'Russo One';
+    font-size: 25px;
+    text-align: center;
+}
+.habilidades span{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.habilidades .fil{
+    display: flex;
+}
+.habilidades .fil .col {
+    width: 50%;
+    padding: 0 20px;
+
+}
+.habilidades .habilidades .barhab{
+    background-color: black;
+    width: 80%;
+    height: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.habilidades .habilidades .mov{
+    background-color: #ff4500;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    height: 10px;
+    position: absolute;
+}
+.habilidades .habilidades .barhab span{
+    background-color: #ff4500;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    top: -15px;
+    right: -15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/*ANIMACIONES*/
+.habilidades .habilidades .aprendizaje{
+    width: 0%;
+    animation: 2s  aprendizaje forwards;
+}
+@keyframes aprendizaje {
+    0%{width: 0%;}
+    100% {width: 95%;}
+}
+
+.habilidades .habilidades .resposabilidad{
+    width: 0%;
+    animation: 2s  resposabilidad forwards;
+}
+@keyframes resposabilidad {
+    0%{width: 0%;}
+    100% {width: 60%;}
+}
+
+.habilidades .habilidades .liderazgo{
+    width: 0%;
+    animation: 2s  liderazgo forwards;
+}
+@keyframes liderazgo {
+    0%{width: 0%;}
+    100% {width: 90%;}
+}
+
+.habilidades .habilidades .flexibilidad{
+    width: 0%;
+    animation: 2s  flexibilidad forwards;
+}
+@keyframes flexibilidad {
+    0%{width: 0%;}
+    100% {width: 80%;}
+}
+
+.habilidades .habilidades .equipo{
+    width: 0%;
+    animation: 2s  equipo forwards;
+}
+@keyframes equipo {
+    0%{width: 0%;}
+    100% {width: 48%;}
+}
+
+.habilidades .habilidades .ingles{
+    width: 0%;
+    animation: 2s  ingles forwards;
+}
+@keyframes ingles {
+    0%{width: 0%;}
+    100% {width: 55%;}
+}
+
+.habilidades .habilidades .ofimatica{
+    width: 0%;
+    animation: 2s  ofimatica forwards;
+}
+@keyframes ofimatica {
+    0%{width: 0%;}
+    100% {width: 80%;}
+}
+
+.habilidades .habilidades .java{
+    width: 0%;
+    animation: 2s  java forwards;
+}
+@keyframes java {
+    0%{width: 0%;}
+    100% {width: 90%;}
+}
+
+.habilidades .habilidades .htmlcss{
+    width: 0%;
+    animation: 2s  htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100% {width: 99%;}
+}
+
+.habilidades .habilidades .photoshop{
+    width: 0%;
+    animation: 2s  photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100% {width: 48%;}
+}
+
+/*FORMACION*/
+.formacion{
+    background-color: rgb(55, 51, 51);
+    color: #ffffff;
+    padding: 50px 20px;
+}
+.formacion .contform{
+    max-width: 1100px;
+    margin: auto;
+}
+.formacion h2{
+    padding-bottom:  20px;
+    font-size: 35px;
+    font-family: 'Russo One';
+    
+    text-align: center;
+}
+.formacion h3{
+    padding-bottom: 20px;
+    font-family: 'Russo One';
+    font-size: 25px;
+    text-align: center;
+    color: #ff4500;
+}
+.formacion h4{
+    padding-bottom: 10px;
+}
+.formacion p{
+    font-family: 'Russo One';
+    font-size: 12px;
+    text-align: justify;
+}
+.formacion .fil{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .formacion .fil .colizq{
+    width: 48;
+    padding: 0 20px;
+ }
+
+ .formacion .fil .colder{
+    width: 48;
+    padding: 0 20px;
+
+ }
+ .formacion .fil .item{
+    background-color: rgb(76, 65, 55);
+    margin-bottom: 30px;
+    padding: 25px;
+    position: relative;
+ }
+ .formacion .fil .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:  #ff4500;
+ }
+
+ .formacion .fil .casa{
+    font-size: 15px;
+    font-style: oblique;
+    display: block;
+ }
+.formacion .fil .item .fecha{
+    font-size:  15px;
+    margin-bottom: 10px;
+    color: #e6830a;
+    display: block;
+}
+.formacion .fil .item p{
+    line-height: 20px;
+}
+
+/*CONTACTOS*/
+.contacto {
+    background-color: rgb(35, 34, 34);
+    color: #ff4500;
+    padding: 50px;
+}
+.contacto .contenido{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    padding: 20px 0px;
+    font-family: 'Russo One';
+    font-size: 40px;
+    text-align: center;
+}
+.contacto .fil  {
+    display: flex;
+}
+.contacto .col{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    background-color: rgb(42, 38, 38);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: none;
+    color: white;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    border: 2px solid white;
+    font-size: 15px;
+}
+.contacto button:hover{
+    background-color: #e6830a;
+}
+footer{
+    background-color: rgb(72, 68, 68);
+    width: 100%;
+    padding: 20px 0 30px 0;
+    color: #e6830a;
+    text-align: center;
+    position: relative;
+}
+footer i{
+    font-size: 30px;
+    color: #e6830a;
+}
+footer i:hover{
+    color: white;
+}
+footer .redes {
+    margin-bottom: 15px;
+}
+footer .redes a{
+    margin: 20px 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    color: rgb(227, 143, 32);
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100%;
+    border: 2px solid #ff4500;
+    transition: .2s;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .barra-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgb(44, 41, 41);
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fil{
+        display: block;
+    }
+    .sobremi .fil .col{
+        width: fit-content;
+    }
+
+    .habilidades .fil{
+        display: block;
+    }
+    .habilidades .fil .col{
+        width: 100%;
+    }
+    .habilidades .fil .col .barhab{
+        width: 100%;
+    }
+    .formacion .fil{
+        display: block;
+    }
+    .formacion .fil .colizq{
+        width: 90%;
+    }
+    .formacion .fil .colder{
+        width: 90%;
+    }
+}
